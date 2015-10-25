@@ -16,3 +16,15 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+group :development, :test do
+  gem 'annotate'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'faker' # http://rubydoc.info/github/stympy/faker/master/frames
+  gem 'mailcatcher'
+  gem 'pry-rails'
+  gem 'quiet_assets'
+  gem 'rspec-rails' # https://github.com/rspec/rspec-rails
+  gem 'xray-rails'
+end
