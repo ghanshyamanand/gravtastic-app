@@ -6,7 +6,7 @@
 
 ### Clone the repo
 ```
-git clone git@bitbucket.org:fizzysoftware/interakt.git
+git clone https://github.com/ghanshyamanand/gravtastic-app.git
 ```
 
 ### Install dependencies (ensure bundler is installed)
@@ -26,27 +26,4 @@ Setup DB
 ```
 rake db:create
 rake db:migrate
-rake db:seed
 ```
-Make sure you have redis & memcached installed and running on your system. Then run Sidekiq and memcached with commands
-```
-sidekiq -C config/sidekiq.yml
-/usr/local/bin/memcached/
-```
-
-Chat server is working on slanger/pusher, It require minimum Ruby 2.1.2
-Command to start slanger:-
-```
-slanger --app_key d55a159cf2da08410a99 --secret 24manoj24
-```
-
-# We are using git hooks for auto bundle and migrate on merge:
-```
-cp git_templates/post-merge.sample .git/hooks/post-merge && chmod +x .git/hooks/post-merge
-
-cp git_templates/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
-```
-
-# Administration
-
-You can access the admin console by visiting http://localhost:3000/admin. You can find out credentials in db/seed.rb file :)
