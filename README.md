@@ -11,7 +11,7 @@ git clone https://github.com/ghanshyamanand/gravtastic-app.git
 
 ### Install dependencies (ensure bundler is installed)
 ```
-cd interakt
+cd gravtastic-app
 bundle install
 ```
 Version of Postgresql
